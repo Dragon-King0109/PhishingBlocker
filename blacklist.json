@@ -1,0 +1,8 @@
+{
+    "blacklist":
+    [
+    "https://www.facebook.com/",
+    "https://www.youtube.com/",
+    "https://www.twitch.tv/"
+    ]
+}

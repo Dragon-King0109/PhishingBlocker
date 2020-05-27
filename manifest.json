@@ -1,0 +1,51 @@
+{
+    "manifest_version": 2,
+    "name": "PhingBlock Test",
+    "description": "釣魚網站檢測插件",
+    "version": "1.0.0",
+
+    "icons": {
+      "16": "PhishB.jpg",
+      "48": "PhishB.jpg",
+      "128": "PhishB.jpg"
+    },
+
+    "browser_action": {
+    "default_icon": "PhishB.png",
+    "default_popup": "popup.html",
+    "default_title": "測試版PhB插件"
+    },
+
+
+/*
+    "content_scripts":
+    [
+      {
+      "matches": ["<all_urls>"],
+      "js": ["testget.js"],
+      "run_at": "document_start"
+      }
+    ],  
+*/
+    "background":
+    {
+      "scripts": ["jquery-3.4.1.js","blocktest.js"]
+    },
+
+    "permissions": 
+    [
+      "contextMenus",
+      "notifications",
+      "tabs",
+      "storage",
+      "webRequestBlocking"
+    ],
+
+    "options_ui":
+    {
+      "page": "options.html",
+      "chrome_style": true
+    }
+
+  //  "omnibox": { "keyword" : "PHB" }
+  }
